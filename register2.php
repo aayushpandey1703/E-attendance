@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body{
+            background: linear-gradient(to right,#0033ff,cadetblue);
+            
+        }
+        .container{
+            background: white;
+            border-radius: 20px;
+            margin-top: 5%;
+            margin-left: 30%;
+            padding: 180px;
+              }
+              .container select{
+                  margin-top: 20px; 
+              }
+              .container2{
+                  position: absolute;
+                  margin-top: -24.5%;
+                  margin-left: 70%;
+              }
+            
+              input{
+                  margin-top: 20px;
+              }
+              .container input[type='submit']{
+                  position: absolute;
+                  background: #0033ff;
+                  color: white;
+                  width: 170px;
+                  padding: 6px;
+                  border: none;
+                  border-radius: 20px;
+                  margin-left: 15%;
+              }
+              h2{
+                  position: absolute;
+                  margin-left: 50%;
+                  margin-top: 5%;
+                  opacity: 0.8;
+              }
+              .container3{
+                  position: absolute;
+                  margin-left: 84%; 
+                  margin-top: 1%;
+                  width: 10%;
+                  height: 40px;
+                  background: #0033ff;
+                  border-radius: 10px;
+              }
+              .container3 input[type='submit']{
+                  height: 30px;
+                  margin-top: 5px;
+                  margin-left: 2px;
+                  width: 70px;
+                  border-radius: 6px;
+                  border: none;
+                  outline: none;
+                  background: white;
+              }
+              img{
+                  position: absolute;
+                  width: 20%;
+                  height: 40%;
+                  margin-left: 5%;
+              }
+              .text{
+                  position: absolute;
+                  width: 250px;
+                  text-align: center;
+                  color: white;
+                  margin-top: 20%;
+                  margin-left: 5%;
+              }
+              .text input[type='submit']{
+                  height: 35px;
+                   width: 140px;
+                  border-radius: 18px;
+                  border: none;
+                  outline: none;
+                  background: white;
+                  
+              }
+    </style>
+    <body>
+        <form action="index.php" method="post">
+        <img src="https://www.freeiconspng.com/uploads/blue-rocket-png-9.png">
+        <div class="text">
+        <h3>Welcome! </h3>
+        <h4>Enter details for registration
+            of student </h4>
+        <input type="submit" value="Login" name="login" />
+        </div>
+        </form>
+         <form action="register.php" method="post">
+            <div class="container3">
+                <input type="submit" value="faculty" name="faculty"  style="background: none; border: none; color: white;"/> <input type="submit" value="student" name="student" disabled="disabled"/>
+            </div>
+            </form>
+        <form action="reg.php" method="post">
+           
+            <h2>Register a Student  </h2>
+            <div class="container">
+                <p> <input type="text" name="name"  placeholder="Name of student"/></p>
+                <p><input type="text" name="roll" value="" placeholder="Enter roll no."/></p>
+                <p><select name="class">
+                        <option>fe cmpn a</option>
+                        <option>fe cmpn b</option>
+                        <option>se cmpn a</option>
+                        <option>se cmpn b</option>
+                    </select></p>
+  
+            <p><input type="submit" value="Add student" name="submit" /></p>
+           
+            </div>
+            <div class="container2">
+                <p><input type="text" name="date" value="" placeholder="birth date (yyyy/mm/dd)"/></p>
+                <p><input type="text" name="number" value="" placeholder="Phone number"/></p>
+                <p><input type="file" name="image" value="" /></p>
+            </div>
+            
+        </form>
+    </body>
+</html>
